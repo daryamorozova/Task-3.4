@@ -59,7 +59,7 @@ class AfishaRepositoryTest {
     @Test
     public void shouldRemoveAll() {
         afishaRepository.removeAll();
-        PurchaseItem[] actual = afishaRepository.removeAll();
+        PurchaseItem[] actual = afishaRepository.findAll();
         PurchaseItem[] expected = new PurchaseItem[0];
 
         assertArrayEquals(expected, actual);

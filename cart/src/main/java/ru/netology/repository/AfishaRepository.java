@@ -40,9 +40,8 @@ public class AfishaRepository {
         return null;
     }
 
-    public PurchaseItem[] removeAll() {
-        PurchaseItem[] items = new PurchaseItem[0];
-
-        return items;
+    public void removeAll() {
+        PurchaseItem[] tmp = new PurchaseItem[0];
+        items = tmp;
     }
 }

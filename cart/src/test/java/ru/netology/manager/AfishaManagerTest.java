@@ -30,18 +30,6 @@ public class AfishaManagerTest {
         afishaManager.add(third);
     }
 
-    @Test
-    public void shouldAdd() {
-        afishaManager.add(forth);
-        // настройка заглушки
-        PurchaseItem[] returned = new PurchaseItem[]{first, second, third, forth};
-        doReturn(returned).when(afishaRepository).findAll();
-
-        PurchaseItem[] expected = new PurchaseItem[]{first, second, third, forth};
-        PurchaseItem[] actual = afishaRepository.findAll();
-        assertArrayEquals(expected, actual);
-
-    }
 
     @Test
     public void shouldGetAll() {
